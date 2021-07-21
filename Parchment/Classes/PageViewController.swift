@@ -116,8 +116,6 @@ public final class PageViewController: UIViewController {
             if #available(iOS 9.0, *),
                 UIView.userInterfaceLayoutDirection(for: view.semanticContentAttribute) == .rightToLeft {
                 return true
-            } else if UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft {
-                return true
             } else {
                 return false
             }
