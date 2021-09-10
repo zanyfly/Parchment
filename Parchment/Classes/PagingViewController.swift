@@ -192,10 +192,12 @@ open class PagingViewController:
 
     /// Determine how users can interact with the page view controller.
     /// _Default: .scrolling_
-    public var contentInteraction: PagingContentInteraction = .scrolling {
-        didSet {
-            configureContentInteraction()
-        }
+    public var contentInteraction: PagingContentInteraction {
+      get { return options.contentInteraction }
+      set { 
+        options.contentInteraction = newValue
+        configureContentInteraction()
+      }
     }
 
     /// The current state of the menu items. Indicates whether an item
