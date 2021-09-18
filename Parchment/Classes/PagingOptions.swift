@@ -30,6 +30,10 @@ public struct PagingOptions {
     /// Determine how users can interact with the menu items.
     /// _Default: .scrolling_
     public var menuInteraction: PagingMenuInteraction
+    
+    /// Determine how users can interact with the contents
+    /// _Default: .scrolling_
+    public var contentInteraction: PagingContentInteraction
 
     /// The class type for collection view layout. Override this if you
     /// want to use your own subclass of the layout. Setting this
@@ -182,5 +186,6 @@ public struct PagingOptions {
         borderColor = UIColor(white: 0.9, alpha: 1)
         indicatorColor = UIColor(red: 3 / 255, green: 125 / 255, blue: 233 / 255, alpha: 1)
         contentNavigationOrientation = .horizontal
+        contentInteraction = .scrolling
     }
 }
