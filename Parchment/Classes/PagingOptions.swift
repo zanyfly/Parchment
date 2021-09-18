@@ -97,6 +97,10 @@ public struct PagingOptions {
 
     /// The background color for the view behind the menu items.
     public var menuBackgroundColor: UIColor
+    
+    /// The background color for the paging contents
+    /// _Default: .white
+    public var pagingContentBackgroundColor: UIColor
 
     /// The scroll navigation orientation of the content in the page
     /// view controller. _Default: .horizontal_
@@ -182,6 +186,7 @@ public struct PagingOptions {
         selectedTextColor = UIColor(red: 3 / 255, green: 125 / 255, blue: 233 / 255, alpha: 1)
         backgroundColor = .clear
         selectedBackgroundColor = .clear
+        pagingContentBackgroundColor = .white
         menuBackgroundColor = UIColor.white
         borderColor = UIColor(white: 0.9, alpha: 1)
         indicatorColor = UIColor(red: 3 / 255, green: 125 / 255, blue: 233 / 255, alpha: 1)

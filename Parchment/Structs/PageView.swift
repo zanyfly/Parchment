@@ -152,7 +152,10 @@ import UIKit
 
             func pagingViewController(_: PagingViewController, viewControllerAt index: Int) -> UIViewController {
                 let view = parent.content(parent.items[index])
-                return UIHostingController(rootView: view)
+                let hostingViewController = UIHostingController(rootView: view)
+                let backgroundColor = parent.options.pagingContentBackgroundColor
+                hostingViewController.view.backgroundColor = backgroundColor
+                return hostingViewController
             }
 
             func pagingViewController(_: PagingViewController, pagingItemAt index: Int) -> PagingItem {
