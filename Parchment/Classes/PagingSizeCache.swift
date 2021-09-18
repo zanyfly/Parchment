@@ -12,13 +12,8 @@ class PagingSizeCache {
     init(options: PagingOptions) {
         self.options = options
 
-        #if swift(>=4.2)
-            let didEnterBackground = UIApplication.didEnterBackgroundNotification
-            let didReceiveMemoryWarning = UIApplication.didReceiveMemoryWarningNotification
-        #else
-            let didEnterBackground = NSNotification.Name.UIApplicationDidEnterBackground
-            let didReceiveMemoryWarning = NSNotification.Name.UIApplicationDidReceiveMemoryWarning
-        #endif
+        let didEnterBackground = UIApplication.didEnterBackgroundNotification
+        let didReceiveMemoryWarning = UIApplication.didReceiveMemoryWarningNotification
 
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(applicationDidEnterBackground(notification:)),
