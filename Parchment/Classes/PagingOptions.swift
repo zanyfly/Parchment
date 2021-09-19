@@ -106,30 +106,16 @@ public struct PagingOptions {
     /// view controller. _Default: .horizontal_
     public var contentNavigationOrientation: PagingNavigationOrientation
 
-    #if swift(>=4.2)
-        public var scrollPosition: UICollectionView.ScrollPosition {
-            switch selectedScrollPosition {
-            case .left:
-                return UICollectionView.ScrollPosition.left
-            case .right:
-                return UICollectionView.ScrollPosition.right
-            case .preferCentered, .center:
-                return UICollectionView.ScrollPosition.centeredHorizontally
-            }
+    public var scrollPosition: UICollectionView.ScrollPosition {
+        switch selectedScrollPosition {
+        case .left:
+            return UICollectionView.ScrollPosition.left
+        case .right:
+            return UICollectionView.ScrollPosition.right
+        case .preferCentered, .center:
+            return UICollectionView.ScrollPosition.centeredHorizontally
         }
-
-    #else
-        public var scrollPosition: UICollectionViewScrollPosition {
-            switch selectedScrollPosition {
-            case .left:
-                return UICollectionViewScrollPosition.left
-            case .right:
-                return UICollectionViewScrollPosition.right
-            case .preferCentered, .center:
-                return UICollectionViewScrollPosition.centeredHorizontally
-            }
-        }
-    #endif
+    }
 
     public var menuHeight: CGFloat {
         return menuItemSize.height + menuInsets.top + menuInsets.bottom
@@ -174,13 +160,8 @@ public struct PagingOptions {
             insets: UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
         )
 
-        #if swift(>=4.0)
-            font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
-            selectedFont = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
-        #else
-            font = UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium)
-            selectedFont = UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium)
-        #endif
+        font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
+        selectedFont = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
 
         textColor = UIColor.black
         selectedTextColor = UIColor(red: 3 / 255, green: 125 / 255, blue: 233 / 255, alpha: 1)
