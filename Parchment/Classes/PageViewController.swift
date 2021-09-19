@@ -166,11 +166,12 @@ public final class PageViewController: UIViewController {
         manager.viewDidDisappear(animated)
     }
 
-    public override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.willTransition(to: newCollection, with: coordinator)
+    public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        print("viewWillTransition: ", size)
         coordinator.animate(alongsideTransition: { _ in
             self.manager.viewWillTransitionSize()
-    })
+        })
     }
 
     // MARK: Public Methods
