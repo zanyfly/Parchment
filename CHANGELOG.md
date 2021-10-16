@@ -2,6 +2,27 @@
 
 `Parchment` adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.1.0](https://github.com/rechsteiner/Parchment/compare/v3.0.1...v3.1.0) - 2020-10-16
+
+### Added
+
+* Add support for `pagingContentBackgroundColor` property #592
+* Add `contentInteraction` property into `PagingOptions` #593
+
+### Changes
+
+* Support for Xcode 13 #581 #601
+* Updated API for SwiftUI wrapper #572 #551
+* Drop support for iOS 8 #568
+* Remove support for older Swift versions #595
+* Improve accessibility of default paging cell #602
+
+### Fixes
+
+* Remove Carthage reference in FRAMEWORK_SEARCH_PATH #569
+* Fix wrong page direction when current paging item is out of view #567
+* Fix issue with rotation when using SwiftUI wrapper #596
+
 ## [3.0.1](https://github.com/rechsteiner/Parchment/compare/v3.0.0...v3.0.1) - 2020-12-15
 
 ### Fixes
