@@ -10,7 +10,12 @@ let package = Package(
     targets: [
         .target(
             name: "Parchment",
-            path: "Parchment"
+            path: "Parchment",
+            linkerSettings: [
+                .unsafeFlags([
+                    "-weak_framework SwiftUI",
+                ]),
+            ]
         ),
     ]
 )

@@ -20,5 +20,8 @@
     "Parchment/**/*.swift",
     "Parchment/*.swift"
   ],
+  "weak_frameworks": [
+    "SwiftUI"
+  ],
   "requires_arc": true
 }
