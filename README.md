@@ -504,7 +504,7 @@ Parchment will be compatible with the lastest public release of Swift.
 
 ### Requirements
 
-* iOS 8.2+
+* iOS 9.0+
 * Xcode 8.0+
 
 ### CocoaPods
