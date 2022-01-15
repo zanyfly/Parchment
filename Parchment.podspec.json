@@ -14,7 +14,7 @@
     "tag": "v3.1.0"
   },
   "platforms": {
-    "ios": "8.2"
+    "ios": "9.0"
   },
   "source_files": [
     "Parchment/**/*.swift",
