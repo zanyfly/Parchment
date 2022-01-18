@@ -149,7 +149,7 @@ Let’s say you want to select the first item:
 ```Swift
 override func viewDidLoad() {
   super.viewDidLoad()
-  if let first = pagingViewController.items.first {
+  if let first = pagingViewController.children.first as? PagingItem {
     pagingViewController.select(pagingItem: first)
   }
 }
