@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://rechsteiner-parchment.s3.eu-central-1.amazonaws.com/parchment-title-3.png" width="240" height="70" />
+  <img src="https://raw.githubusercontent.com/rechsteiner/Parchment/main/.images/title-light-mode.png#gh-light-mode-only" width="240" height="70" />
+  <img src="https://raw.githubusercontent.com/rechsteiner/Parchment/main/.images/title-dark-mode.png#gh-dark-mode-only" width="240" height="70" />
 </p>
 
 <p align="center">
@@ -17,9 +18,9 @@
 <br/>
 
 <p align="center">
-  <img src="https://rechsteiner-parchment.s3.eu-central-1.amazonaws.com/parchment-delegate.gif" alt="Cities Example" />
-  <img src="https://rechsteiner-parchment.s3.eu-central-1.amazonaws.com/parchment-unplash.gif" alt="Unsplash Example" />
-  <img src="https://rechsteiner-parchment.s3.eu-central-1.amazonaws.com/parchment-calendar.gif" alt="Calendar Example" />
+  <img src="https://raw.githubusercontent.com/rechsteiner/Parchment/main/.images/example-cities.gif" alt="Cities Example" />
+  <img src="https://raw.githubusercontent.com/rechsteiner/Parchment/main/.images/example-unsplash.gif" alt="Unsplash Example" />
+  <img src="https://raw.githubusercontent.com/rechsteiner/Parchment/main/.images/example-calendar.gif" alt="Calendar Example" />
 </p>
 
 ## Features
