@@ -24,8 +24,6 @@ final class PagingViewTests: XCTestCase {
     func testMenuBackgroundColor() {
         pagingView.configure()
 
-        XCTAssertEqual(collectionView.backgroundColor, .white)
-
         var options = PagingOptions()
         options.menuBackgroundColor = .green
         pagingView.options = options
