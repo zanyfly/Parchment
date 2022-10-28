@@ -8,6 +8,7 @@ public final class PageViewController: UIViewController {
 
     public weak var dataSource: PageViewControllerDataSource?
     public weak var delegate: PageViewControllerDelegate?
+    public var forbiddenScrollVerticalWhenHorizDirection = false
 
     public override var shouldAutomaticallyForwardAppearanceMethods: Bool {
         return false
@@ -82,7 +83,7 @@ public final class PageViewController: UIViewController {
         case .horizontal:
             return CGSize(
                 width: CGFloat(manager.state.count) * view.bounds.width,
-                height: view.bounds.height
+                height: forbiddenScrollVerticalWhenHorizDirection ? 0 : view.bounds.height
             )
         case .vertical:
             return CGSize(

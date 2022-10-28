@@ -309,10 +309,11 @@ open class PagingViewController:
     ///
     /// - Parameter options: An object with configuration options. These
     /// parameters are also available directly on `PagingViewController`.
-    public init(options: PagingOptions = PagingOptions()) {
+    public init(options: PagingOptions = PagingOptions(), forbiddenScrollVerticalWhenHorizDirection: Bool = false) {
         self.options = options
         pagingController = PagingController(options: options)
         pageViewController = PageViewController(options: options)
+        pageViewController.forbiddenScrollVerticalWhenHorizDirection = forbiddenScrollVerticalWhenHorizDirection
         collectionViewLayout = createLayout(layout: options.menuLayoutClass.self)
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
         super.init(nibName: nil, bundle: nil)
